@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cynthia Howard | Photographer</title>
+  <meta name="description" content="Lifestyle, portrait, and event photography by Cynthia Howard." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img src="logo.png.jpg" alt="Cynthia Howard Photographer logo" />
+        <h1>Cynthia Howard</h1>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a class="cta" href="#contact">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="copy">
+        <h2>Timeless Photos.<br/> Real Moments.</h2>
+        <p>Portraits, lifestyle and events across Houston and surrounding areas. Let’s create images you’ll love forever.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Request a Session</a>
+          <a class="btn ghost" href="#portfolio">View Work</a>
+        </div>
+      </div>
+      <figure class="hero-card" aria-label="Featured image placeholder">
+        <span>Feature shot here</span>
+      </figure>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h3 class="section-title">Services</h3>
+      <p class="muted">Simple session-based pricing. Detailed packages available on request.</p>
+
+      <div class="services">
+        <article class="service">
+          <span class="badge">Portraits</span>
+          <h4>Studio & Outdoor</h4>
+          <p>Headshots, seniors, and personal branding with natural retouching.</p>
+        </article>
+        <article class="service">
+          <span class="badge">Lifestyle</span>
+          <h4>Families & Couples</h4>
+          <p>Relaxed, candid sessions capturing your story and personality.</p>
+        </article>
+        <article class="service">
+          <span class="badge">Events</span>
+          <h4>Small Events</h4>
+          <p>Birthdays, showers, and intimate gatherings — the key moments covered.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <h3 class="section-title">Mini Portfolio</h3>
+      <div class="grid">
+        <div class="tile" role="img" aria-label="Portfolio image 1"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container about-wrap">
+      <div class="about-card">
+        <h3 class="section-title">About Cynthia</h3>
+        <p>Hi! I’m Cynthia — a Houston-based photographer focused on warm, true-to-life images.
+          I love natural light, easy direction, and sessions that feel like hanging out with a friend.</p>
+        <p class="muted">Turnaround typically 3–7 days. Rush options available.</p>
+      </div>
+      <div class="about-card">
+        <h3 class="section-title">What You Get</h3>
+        <ul class="checklist">
+          <li>Mobile-responsive single page (Home + Contact)</li>
+          <li>Google Map & contact form</li>
+          <li>Clean branding + fast load</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-card">
+        <h3 class="section-title">Let’s Work Together</h3>
+        <!-- Formspree-ready; replace action with your endpoint -->
+        <form id="contactForm" action="https://formspree.io/f/your-id" method="POST" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your session…" required></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="map-card">
+        <h4>Houston, Texas</h4>
+        <div class="map-embed">
+          <!-- Swap the src to your studio location -->
+          <iframe
+            title="Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d445554.353996904!2d-95.823268!3d29.817478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf281e825d59%3A0x433a2d2a08e0d1a0!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1717777777">
+          </iframe>
+        </div>
+        <ul class="contact-lines">
+          <li><strong>Email:</strong> hello@cynthiahowardphoto.com</li>
+          <li><strong>Instagram:</strong> @cynthiahowardphoto</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cynthia Howard Photographer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
